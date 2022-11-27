@@ -2,13 +2,17 @@ import React from 'react';
 import { RiFocus2Line } from "react-icons/ri";
 import { FcIdea } from "react-icons/fc";
 import { FiPieChart } from "react-icons/fi";
+import { BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 import heroImg from '../../images/avater.png';
-import lineOrg from '../../images/object-1.png'
+import lineOrg from '../../images/object-1.png';
+import horizontalLine from '../../images/object-2.png'
 
 const LandingPage = () => {
     return (
         <section className="bg-primary">
-            <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex px-5 pt-8 md:flex-row flex-col items-center relative">
+                {/* left half  */}
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <img className='w-20 mb-6' src={lineOrg} alt="" />
                     <h3 className='uppercase text-xl font-bold text-secondary'>we are the creative</h3>
@@ -27,8 +31,28 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
+                {/* right half  */}
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img className="object-cover object-center rounded" alt="hero" src={heroImg} />
+                </div>
+                {/* social icon part  */}
+                <div className='absolute bottom-6 right-0'>
+                    <div className="insta bg-secondary rounded-full p-1 mb-2">
+                        <BsInstagram/>
+                    </div>
+                    <div className="facebook bg-secondary rounded-full p-1 mb-2">
+                        <FaFacebookF/>
+                    </div>
+                    <div className="twitter bg-secondary rounded-full p-1 mb-2">
+                        <BsTwitter/>
+                    </div>
+                    <div className="whatapp bg-secondary rounded-full p-1 mb-2">
+                        <BsWhatsapp/>
+                    </div>
+                </div>
+                {/* horaizontal line  */}
+                <div className='absolute bottom-6 left-0'>
+                    <img className='w-2' src={horizontalLine} alt="" />
                 </div>
             </div>
         </section>
