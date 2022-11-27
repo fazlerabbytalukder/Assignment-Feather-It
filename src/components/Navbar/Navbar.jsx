@@ -20,13 +20,13 @@ const Navbar = () => {
                             <Link className='lg:px-5 py-2 font-semibold block' to='/'><button>Home</button></Link>
                         </li>
                         <li>
-                            <Link className='lg:px-5 py-2 font-semibold block' to='/'><button>About</button></Link>
+                            <Link className='lg:px-5 py-2 font-semibold block' to='/about'><button>About</button></Link>
                         </li>
                         <li>
-                            <Link className='lg:px-5 py-2 font-semibold block' to='/'><button>Workshop</button></Link>
+                            <Link className='lg:px-5 py-2 font-semibold block' to='/workshop'><button>Workshop</button></Link>
                         </li>
                         <li>
-                            <Link className='lg:px-5 py-2 font-semibold block' to='/'><button>Contact</button></Link>
+                            <Link className='lg:px-5 py-2 font-semibold block' to='/contact'><button>Contact</button></Link>
                         </li>
                         <li>
                             <form className='lg:px-5 py-2 font-semibold block'>
