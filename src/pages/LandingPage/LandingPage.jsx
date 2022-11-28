@@ -6,7 +6,9 @@ import { BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import heroImg from '../../images/avater.png';
 import lineOrg from '../../images/object-1.png';
-import horizontalLine from '../../images/object-2.png'
+import horizontalLine from '../../images/object-2.png';
+import infinityImg from '../../images/object-4.png';
+import taglineImg from '../../images/object-5.png';
 
 const LandingPage = () => {
     return (
@@ -36,7 +38,7 @@ const LandingPage = () => {
                     <img className="object-cover object-center rounded" alt="hero" src={heroImg} />
                 </div>
                 {/* social icon part  */}
-                <div className='absolute bottom-6 right-0'>
+                <div className='absolute bottom-10 right-0'>
                     <div className="insta bg-secondary rounded-full p-1 mb-2">
                         <BsInstagram/>
                     </div>
@@ -51,9 +53,17 @@ const LandingPage = () => {
                     </div>
                 </div>
                 {/* horaizontal line  */}
-                <div className='absolute bottom-6 left-0'>
+                <div className='absolute bottom-10 left-0'>
                     <img className='w-2' src={horizontalLine} alt="" />
                 </div>
+                {/* infinity object  */}
+                <div className='absolute bottom-0 left-1/4 invisible md:visible lg:visible xl:visible'>
+                    <img className='w-3/12' src={infinityImg} alt="" />
+                </div>
+                {/* tagline text  */}
+                {/* <div>
+                    <img src={taglineImg} alt="" />
+                </div> */}
             </div>
         </section>
     );
