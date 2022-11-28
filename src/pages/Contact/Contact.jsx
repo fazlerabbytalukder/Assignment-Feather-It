@@ -7,7 +7,7 @@ const Contact = () => {
         <div>
             <Navbar />
             <section className="text-gray-600 body-font relative">
-                <div className="container px-5 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
+                <div className="container px-5 py-6 mx-auto flex sm:flex-nowrap flex-wrap">
                     <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                         <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.841676995668!2d90.38209461445587!3d23.753024594594127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b909699eb439%3A0x49891c37c9b3294c!2sFeather%20IT!5e0!3m2!1sen!2sbd!4v1669618916183!5m2!1sen!2sbd"
                             width="100%"
