@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className='py-2'>
             <div className="flex items-center justify-between container mx-auto px-4 flex-wrap w-full">
                 <Link className='cursor-pointer' to='/'>
-                    <img className='w-20 mr-2' src={logo} alt="" />
+                    <img className='w-32 mr-2' src={logo} alt="" />
                 </Link>
                 <FiMenu className='lg:hidden block h-6 w-6 cursor-pointer' onClick={() => setOpen(!open)} />
                 <nav className={`${open ? "block" : "hidden"} w-full lg:flex lg:items-center lg:w-auto`}>
