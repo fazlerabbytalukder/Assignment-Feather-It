@@ -40,16 +40,16 @@ const LandingPage = () => {
                 {/* social icon part  */}
                 <div className='absolute bottom-10 right-0'>
                     <div className="insta bg-secondary rounded-full p-1 mb-2">
-                        <BsInstagram />
+                        <BsInstagram/>
                     </div>
                     <div className="facebook bg-secondary rounded-full p-1 mb-2">
-                        <FaFacebookF />
+                        <FaFacebookF/>
                     </div>
                     <div className="twitter bg-secondary rounded-full p-1 mb-2">
-                        <BsTwitter />
+                        <BsTwitter/>
                     </div>
                     <div className="whatapp bg-secondary rounded-full p-1 mb-2">
-                        <BsWhatsapp />
+                        <BsWhatsapp/>
                     </div>
                 </div>
                 {/* horaizontal line  */}
