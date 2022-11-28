@@ -40,16 +40,16 @@ const LandingPage = () => {
                 {/* social icon part  */}
                 <div className='absolute bottom-10 right-0'>
                     <div className="insta bg-secondary rounded-full p-1 mb-2">
-                        <BsInstagram/>
+                        <BsInstagram />
                     </div>
                     <div className="facebook bg-secondary rounded-full p-1 mb-2">
-                        <FaFacebookF/>
+                        <FaFacebookF />
                     </div>
                     <div className="twitter bg-secondary rounded-full p-1 mb-2">
-                        <BsTwitter/>
+                        <BsTwitter />
                     </div>
                     <div className="whatapp bg-secondary rounded-full p-1 mb-2">
-                        <BsWhatsapp/>
+                        <BsWhatsapp />
                     </div>
                 </div>
                 {/* horaizontal line  */}
@@ -57,13 +57,16 @@ const LandingPage = () => {
                     <img className='w-2' src={horizontalLine} alt="" />
                 </div>
                 {/* infinity object  */}
-                <div className='absolute bottom-0 left-1/4 invisible md:visible lg:visible xl:visible'>
+                <div className='absolute bottom-0 left-1/4 invisible lg:visible xl:visible'>
                     <img className='w-3/12' src={infinityImg} alt="" />
                 </div>
                 {/* tagline text  */}
-                {/* <div>
-                    <img src={taglineImg} alt="" />
-                </div> */}
+                <div className='absolute top-11 left-1/3 invisible lg:visible xl:visible'>
+                    <div className='relative'>
+                        <img className='w-3/12' src={taglineImg} alt="" />
+                        <h3 className='absolute inset-16 text-2xl text-white italic tracking-widest'>Supercharge <br /> Your Business <br /> With Us!</h3>
+                    </div>
+                </div>
             </div>
         </section>
     );
