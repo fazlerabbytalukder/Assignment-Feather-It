@@ -7,12 +7,16 @@ import lineOrg from '../../images/object-1.png';
 import horizontalLine from '../../images/object-2.png';
 import infinityImg from '../../images/object-4.png';
 import taglineImg from '../../images/object-5.png';
+import leftObject from '../../images/object-6.png';
+import circleImg from '../../images/object-7.png';
+import zikzackImg from '../../images/object-8.png';
 import SocialSites from '../../components/SocialSites/SocialSites';
+
 
 const LandingPage = () => {
     return (
-        <section className="bg-primary">
-            <div className="container mx-auto flex px-5 pt-8 md:flex-row flex-col items-center relative">
+        <section className="bg-primary relative">
+            <div className="container mx-auto flex px-10 pt-8 md:flex-row flex-col items-center relative">
                 {/* left half  */}
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <img className='w-20 mb-6' src={lineOrg} alt="" />
@@ -55,6 +59,18 @@ const LandingPage = () => {
                         <h3 className='absolute inset-16 text-2xl text-white italic tracking-widest'>Supercharge <br /> Your Business <br /> With Us!</h3>
                     </div>
                 </div>
+            </div>
+            {/* circle object  */}
+            <div className='absolute top-1/3 left-0'>
+                <img className='w-14' src={leftObject} alt="" />
+            </div>
+            {/* circle object 2 */}
+            <div className='absolute top-1/2 right-1/2 invisible lg:visible xl:visible'>
+                <img className='w-16' src={circleImg} alt="" />
+            </div>
+            {/* right corner object  */}
+            <div className='absolute top-0 right-0'>
+                <img className='w-16' src={zikzackImg} alt="" />
             </div>
         </section>
     );

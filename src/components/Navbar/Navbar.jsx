@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='py-2'>
-            <div className="flex items-center justify-between container mx-auto px-4 flex-wrap w-full">
+            <div className="flex items-center justify-between container mx-auto px-10 flex-wrap w-full">
                 <Link className='cursor-pointer' to='/'>
                     <img className='w-32 mr-2' src={logo} alt="" />
                 </Link>
