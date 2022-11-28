@@ -2,13 +2,12 @@ import React from 'react';
 import { RiFocus2Line } from "react-icons/ri";
 import { FcIdea } from "react-icons/fc";
 import { FiPieChart } from "react-icons/fi";
-import { BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
 import heroImg from '../../images/avater.png';
 import lineOrg from '../../images/object-1.png';
 import horizontalLine from '../../images/object-2.png';
 import infinityImg from '../../images/object-4.png';
 import taglineImg from '../../images/object-5.png';
+import SocialSites from '../../components/SocialSites/SocialSites';
 
 const LandingPage = () => {
     return (
@@ -19,7 +18,7 @@ const LandingPage = () => {
                     <img className='w-20 mb-6' src={lineOrg} alt="" />
                     <h3 className='uppercase text-xl font-bold text-secondary'>we are the creative</h3>
                     <h1 className='uppercase text-5xl text-white'>Marketing <br /> agency</h1>
-                    <p className='text-white w-1/2 my-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum ducimus vel eveniet error voluptatum.?</p>
+                    <p className='text-white lg:w-1/2 my-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum ducimus vel eveniet error voluptatum.?</p>
                     <button className='border-2 border-white text-white px-5 py-1 uppercase rounded-full'>see more</button>
                     <div className="flex justify-between items-center mt-6">
                         <div className='bg-white p-1 rounded-full mr-4'>
@@ -39,18 +38,7 @@ const LandingPage = () => {
                 </div>
                 {/* social icon part  */}
                 <div className='absolute bottom-10 right-0'>
-                    <div className="insta bg-secondary rounded-full p-1 mb-2">
-                        <BsInstagram/>
-                    </div>
-                    <div className="facebook bg-secondary rounded-full p-1 mb-2">
-                        <FaFacebookF/>
-                    </div>
-                    <div className="twitter bg-secondary rounded-full p-1 mb-2">
-                        <BsTwitter/>
-                    </div>
-                    <div className="whatapp bg-secondary rounded-full p-1 mb-2">
-                        <BsWhatsapp/>
-                    </div>
+                    <SocialSites/>
                 </div>
                 {/* horaizontal line  */}
                 <div className='absolute bottom-10 left-0'>

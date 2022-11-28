@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import logo from '../../images/logo.png';
 import SearchInput from '../SearchInput/SearchInput';
+import DropdownMenu from '../DropdownMenu/DropdownMenu';
+import logo from '../../images/logo.png';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
     return (
         <div className='py-2'>
             <div className="flex items-center justify-between container mx-auto px-4 flex-wrap w-full">
@@ -30,12 +33,21 @@ const Navbar = () => {
                             <Link className='lg:px-5 py-2 font-semibold block' to='/contact'><button>Contact</button></Link>
                         </li>
                         <li>
-                            <SearchInput/>
+                            <SearchInput />
                         </li>
                         <li className='flex justify-center items-center'>
-                            <button>
-                                <BsThreeDotsVertical className='text-2xl' />
-                            </button>
+                            <div className='relative inline-block text-left'>
+                                <div>
+                                    <button onClick={() => setDropdownOpen(!dropdownOpen)}>
+                                        <BsThreeDotsVertical className='text-2xl' />
+                                    </button>
+                                </div>
+                                {
+                                    dropdownOpen && (
+                                        <DropdownMenu/>
+                                    )
+                                }
+                            </div>
                         </li>
                     </ul>
                 </nav>
